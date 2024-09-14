@@ -22,11 +22,10 @@
             <ImageView
                 android:id="@+id/item_image"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:src="@drawable/ironman"
+                android:layout_height="200dp"
+                android:src="@drawable/tony"
                 android:scaleType="centerCrop"
-                android:contentDescription="Image of Iron Man"/>
+                android:contentDescription="Iron Man"/>
 
             <TextView
                 android:id="@+id/item_title"
@@ -41,6 +40,33 @@
 
             <Button
                 android:id="@+id/item_action_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:id="@+id/item_image1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bruce"
+                android:scaleType="centerCrop"
+                android:contentDescription="Batman"/>
+
+            <TextView
+                android:id="@+id/item_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batman"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@android:color/black"/>
+
+            <Button
+                android:id="@+id/item_action_button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="View Details"

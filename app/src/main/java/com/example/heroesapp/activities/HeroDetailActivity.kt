@@ -3,26 +3,29 @@ package com.example.heroesapp.activities
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.heroesapp.R
 
 class HeroDetailActivity : AppCompatActivity() {
 
-    lateinit var backbtn : ImageView
+    private lateinit var backButton: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_hero_detail)
+        initializeUI()
+        handleBackButton()
+    }
 
+    private fun initializeUI() {
+        // Inicializa las vistas
+        backButton = findViewById(R.id.back_list)
+    }
 
-        //Regresando al activity anterior
-        backbtn = findViewById(R.id.back_list)
-        backbtn.setOnClickListener{
-            val intent = Intent(this@HeroDetailActivity, PublisherActivity::class.java)
-            startActivity(intent)
+    private fun handleBackButton() {
+        // Configura el botón de retroceso para regresar a PublisherActivity
+        backButton.setOnClickListener {
+            startActivity(Intent(this, PublisherActivity::class.java))
             finish()
         }
     }

@@ -3,9 +3,10 @@ package com.example.heroesapp.models
 import android.os.Parcel
 import android.os.Parcelable
 
-data class CharacterItem(val id: Int, val name: String, val imagen: String) : Parcelable {
+data class CharacterItem(val id: Int, val name: String, val imageUrl: String) : Parcelable {
+
     // Constructor que toma un Parcel
-    constructor(parcel: Parcel) : this(
+    private constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString() ?: "",
         parcel.readString() ?: ""
@@ -15,12 +16,10 @@ data class CharacterItem(val id: Int, val name: String, val imagen: String) : Pa
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeInt(id)
         parcel.writeString(name)
-        parcel.writeString(imagen)
+        parcel.writeString(imageUrl)
     }
 
-    override fun describeContents(): Int {
-        return 0
-    }
+    override fun describeContents(): Int = 0
 
     companion object CREATOR : Parcelable.Creator<CharacterItem> {
         override fun createFromParcel(parcel: Parcel): CharacterItem {
@@ -31,8 +30,8 @@ data class CharacterItem(val id: Int, val name: String, val imagen: String) : Pa
             return arrayOfNulls(size)
         }
 
-
-        val characters = mutableListOf<CharacterItem>(
+        // Lista estática de personajes
+        val characters = mutableListOf(
             CharacterItem(1, "Doctor Strange", "https://i.imgur.com/uBngvBU.jpeg"),
             CharacterItem(2, "Black Panther", "https://i.imgur.com/k5B2ZqS.jpeg"),
             CharacterItem(3, "Captain Marvel", "https://i.imgur.com/Q6OSNrx.jpeg"),

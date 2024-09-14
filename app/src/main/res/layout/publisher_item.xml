@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="#0078F2"
+        android:id="@+id/publisher_image"
+        android:layout_width="match_parent"
+        android:layout_height="1100dp"
+        android:src="@drawable/cap"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

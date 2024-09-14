@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HeroesApp</string>
+    <string name="email">Coloca tu email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar Sesion</string>
+    <string name="backwards_arrow">backwards arrow</string>
+    <string name="descripcion_heroe">Spider-Man es el alter ego de Peter Parker, un joven estudiante y fotógrafo que lucha contra el crimen en Nueva York. Tras ser mordido por una araña radiactiva, desarrolla habilidades sobrehumanas como trepar paredes y lanzar telarañas. Su identidad secreta está motivada por su sentido de responsabilidad y el lema: \'Un gran poder conlleva una gran responsabilidad\'.</string>
+</resources>

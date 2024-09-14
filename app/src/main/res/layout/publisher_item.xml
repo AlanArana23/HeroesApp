@@ -5,14 +5,26 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <ImageView
-        android:background="#0078F2"
-        android:id="@+id/publisher_image"
-        android:layout_width="match_parent"
-        android:layout_height="1100dp"
-        android:src="@drawable/cap"
-        android:scaleType="centerCrop"
-        android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/publisher_image"
+            android:layout_width="match_parent"
+            android:layout_height="1100dp"
+            android:src="@drawable/bluered"
+            android:scaleType="centerCrop"
+            android:background="#0078F2"/>
 
+        <TextView
+            android:id="@+id/publisher_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publisher Name"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="#80000000"
+            android:padding="8dp"/>
 
 </LinearLayout>

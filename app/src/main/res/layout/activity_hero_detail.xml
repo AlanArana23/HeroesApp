@@ -61,7 +61,7 @@
             android:layout_marginTop="8dp"
             android:elevation="5dp"
             android:justificationMode="inter_word"
-            android:text="@string/descripcion_heroe"
+            android:text="Heroe, millonario, filantropo lo que un hero desearia tener, es broma, solo uno lo tiene y ese es IRONMAN, el que nos salvo de la destruccion de thanos y rey del MCU"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="30dp"
